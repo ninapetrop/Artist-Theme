@@ -1,0 +1,65 @@
+.xs-12, .sm-6, .sm-4, .sm-8, .xs-6
+  margin: 0
+  padding: 10px
+
+.xs-6
+  width: 50%
+  height: 200px
+  @media (max-width: 910px)
+    width: 100%
+    clear: both
+.grow
+  flex-grow: 1
+  // display: flex
+  // flex-direction: column
+  // justify-content: center
+.xs-12
+  width: 100%
+  text-align: center
+  height: 470px
+.flexbox
+  display: flex
+  //flex-wrap: wrap
+  flex-direction: row
+  width: 100vw
+  padding: 0
+  margin: 0
+  @media (max-width: 910px)
+    flex-direction: column
+.flexbox.wrap
+  flex-wrap: wrap
+  flex-direction: row
+  align-items: flex-start
+  .sm-6
+    height: 325px
+  .sm-4
+    height: 225px
+.divider
+  width: 100%
+  height: 15px
+  background: grey
+  clear: both
+
+.imgBack
+  background:
+    size: cover
+    position: center center
+  color: white
+  h1
+    margin-bottom: 0
+  .meta
+    color: white
+    margin-top: 0
+.textPreview
+  padding: 0 50px
+  min-height: 300px
+.vertCenter
+  display: flex
+  flex-direction: column
+  justify-content: space-around
+
+.shrink
+  flex-shrink: 4
+.sm-8
+  width: 800px
+  flex-grow: 1

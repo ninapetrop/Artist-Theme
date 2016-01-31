@@ -1,0 +1,77 @@
+---
+layout: default
+title: Home
+---
+
+{% for post in site.posts limit:1 %}
+<div class="xs-12 imgBack textCenter vertCenter grow" style='background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1) ), url({{ site.url }}/assets/img/{{ post.thumbnail }})'>
+  <div>
+    <h1 class='caps'>{{ post.title }}</h1>
+    <p class='meta'>{{ post.date | date_to_long_string }} / 500 Words / by {{ post.author }}</p>
+  </div>
+</div>
+{% endfor %}
+
+<div class='flexbox wrap'>
+{% for post in site.posts limit:2 offset:1 %}
+  <div class="sm-6 imgBack vertCenter textCenter grow" style='background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1) ), url({{ site.url }}/assets/img/{{ post.thumbnail }})'>
+    <div>
+      <h1 class='caps'>{{ post.title }}</h1>
+      <p class='meta'>{{ post.date | date_to_long_string }} / 500 Words / by {{ post.author }}</p>
+    </div>
+  </div>
+{% endfor %}
+</div>
+<div class='divider xs-12 grow'></div>
+
+<div class='flexbox'>
+{% for post in site.posts limit:2 offset:1 %}
+  <div class="sm-6 textPreview vertCenter grow">
+    <div>
+      <h2 class='post-title'>{{ post.title }}</h1>
+      <p>{{ post.excerpt }}</p>
+      <p class='meta'>{{ post.date | date_to_long_string }} / 500 Words / by {{ post.author }}</p>
+    </div>
+  </div>
+{% endfor %}
+</div>
+
+<div class='flexbox wrap'>
+{% for post in site.posts limit:3 offset:1 %}
+  <div class="sm-4 imgBack vertCenter textCenter grow" style='background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1) ), url({{ site.url }}/assets/img/{{ post.thumbnail }})'>
+    <div>
+      <h1 class='caps'>{{ post.title }}</h1>
+      <p class='meta'>{{ post.date | date_to_long_string }} / 500 Words / by {{ post.author }}</p>
+    </div>
+  </div>
+{% endfor %}
+</div>
+<div class='divider xs-12 grow'></div>
+
+<div class='flexbox'>
+  <div class='sm-4 textPreview shrink'>
+    {% for post in site.posts limit:2 %}
+      <div>
+        <h2 class='post-title'>{{ post.title }}</h1>
+        <p>{{ post.excerpt }}</p>
+        <p class='meta'>{{ post.date | date_to_long_string }} / 500 Words / by {{ post.author }}</p>
+      </div>
+    {% endfor %}
+  </div>
+  <div class='sm-8 flexbox wrap'>
+    <ul class='xs-6'>
+      {% for post in site.posts limit:4 %}
+      <li class='post-title'>{{ post.title }}</li>
+      <li class='meta'>{{ post.date | date_to_long_string }} / 500 Words / by {{ post.author }}</li>
+      <hr>
+      {% endfor %}
+    </ul>
+    <ul class='xs-6'>
+      {% for post in site.posts limit:4 %}
+      <li class='post-title'>{{ post.title }}</li>
+      <li class='meta'>{{ post.date | date_to_long_string }} / 500 Words / by {{ post.author }}</li>
+      <hr>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
