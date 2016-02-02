@@ -4,10 +4,14 @@
 
 .xs-6
   width: 50%
-  height: 200px
+  //height: 200px
   @media (max-width: 910px)
     width: 100%
     clear: both
+.tall
+  height: 470px
+.short
+  height: 200px
 .grow
   flex-grow: 1
   // display: flex
@@ -16,10 +20,10 @@
 .xs-12
   width: 100%
   text-align: center
-  height: 470px
+  //height: 470px
 .flexbox
   display: flex
-  //flex-wrap: wrap
+  //flex-wrap: //wrap
   flex-direction: row
   width: 100vw
   padding: 0
@@ -37,7 +41,7 @@
 .divider
   width: 100%
   height: 15px
-  background: grey
+  background: $yellow
   clear: both
 
 .imgBack
@@ -47,6 +51,9 @@
   color: white
   h1
     margin-bottom: 0
+  &:hover
+    filter: saturate(70%)
+    cursor: pointer
   .meta
     color: white
     margin-top: 0

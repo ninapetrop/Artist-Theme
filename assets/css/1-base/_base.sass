@@ -27,10 +27,19 @@ ul
   hr
     margin-bottom: 15px
 
+a
+  text-decoration: none
+  &:hover
+    text-decoration: underline
 .post-title
   font:
     weight: 700
     size: 21px
+
+.imgBack .post-title
+  color: white
+  font-size: 36px
+
 .textCenter
   text-align: center
 
@@ -39,6 +48,8 @@ ul
 
 .meta
   color: $yellow
+.accent
+  color: $accent-color
 // Selection colors (easy to forget)
 ::selection
   background: $selection-color
