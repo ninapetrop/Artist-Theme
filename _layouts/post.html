@@ -21,16 +21,16 @@ title: Home
   <p class='meta'>
     {{ page.author }} // {{ page.date | date_to_long_string }}
   </p>
+  
   {{ content }}
 
   <div class='flexbox flexbox-contain authorBlock'>
-    <div class='authorImg xs-3'>
+    <div class='authorImg xs-3 imgBack' style='background-image: url({{ site.url }}/assets/img/avatar.jpeg)'>
 
     </div>
     <div class='authorBio xs-9'>
-      <h3>About the Author : <span class='accent'>{{ page.author }}</span></h3>
-      <p>
-        This is where we talk about the author
+      <h3>About the Author : <span class='accent'>{{ site.author }}</span></h3>
+      <p>{{ site.authorBio }}
       </p>
     </div>
   </div>

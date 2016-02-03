@@ -1,3 +1,4 @@
+// Trigger top bar with post name after window reaches bottom of feature image
 $(function() {
   $(window).scroll(function() {
     var scroll = $(this).scrollTop();
@@ -7,5 +8,13 @@ $(function() {
     } else {
         $('.topBar').addClass('hidden');
     }
+  });
+});
+
+// Push out menu
+$(document).ready(function() {
+	$('.toggle-button').click(function(){
+    $('.slideout-menu').toggleClass('slideout-open');
+    $('main').toggleClass('pushLeft');
   });
 });

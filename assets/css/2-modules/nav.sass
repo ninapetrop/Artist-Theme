@@ -1,0 +1,27 @@
+#menu.slideout-menu
+  &.slideout-closed
+    display: none
+  &.slideout-open
+    background: $accent-color
+    color: white
+    position: fixed
+    top: 0
+    left: 0
+    bottom: 0
+    width: 260px
+    padding: 20px
+    display: block
+    z-index: 1
+
+main
+  &.pushLeft
+    position: relative
+    z-index: 1
+    will-change: transform
+    margin-left: 260px
+    overflow: hidden
+  .toggle-button
+    z-index: 1
+    position: fixed
+    margin-top: 10px
+    margin-left: 15px

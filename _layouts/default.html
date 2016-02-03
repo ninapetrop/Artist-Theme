@@ -10,7 +10,15 @@
   </head>
   <body>
 
+    {% include nav.html %}
+
+
+
+    <main id="panel">
+      <button class='toggle-button'>menu</button>
       {{ content }}
+    </main>
+
 
       {% include footer.html %}
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

@@ -380,7 +380,8 @@ ul {
     margin-bottom: 15px; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: black; }
   a:hover {
     text-decoration: underline; }
 
@@ -442,6 +443,34 @@ body {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box; }
+
+#menu.slideout-menu.slideout-closed {
+  display: none; }
+
+#menu.slideout-menu.slideout-open {
+  background: #F1654C;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 260px;
+  padding: 20px;
+  display: block;
+  z-index: 1; }
+
+main.pushLeft {
+  position: relative;
+  z-index: 1;
+  will-change: transform;
+  margin-left: 260px;
+  overflow: hidden; }
+
+main .toggle-button {
+  z-index: 1;
+  position: fixed;
+  margin-top: 10px;
+  margin-left: 15px; }
 
 footer {
   background: #FCB941; }
@@ -526,6 +555,8 @@ footer {
 .textPreview {
   padding: 0 50px;
   min-height: 300px; }
+  .textPreview div {
+    padding: 20px 0; }
 
 .vertCenter {
   display: -webkit-flex;
@@ -578,11 +609,16 @@ footer {
   -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
           justify-content: space-around;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-top: solid 3px #eaeaea; }
-  .authorBlock.flexbox-contain .xs-3 {
-    width: 150px; }
   .authorBlock.flexbox-contain .authorImg {
-    background: #F1654C; }
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; }
+  .authorBlock.flexbox-contain .authorBio {
+    width: 450px; }
 
 .hidden {
   display: none; }

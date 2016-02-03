@@ -1,13 +1,13 @@
 .topBar
   position: fixed
   background: white
-  border-bottom: solid 4px $yellow
+  border-bottom: solid 4px $primary
   opacity: .95
 
   p
     max-width: 710px
     margin: auto
-    color: $yellow
+    color: $primary
     font-weight: 700
     text-align: left
 .banner
@@ -23,11 +23,13 @@
   width: 100%
   padding: 20px
   justify-content: space-around
+  align-items: center
   border-top: solid 3px #eaeaea
-  .xs-3
-    width: 150px
   .authorImg
-    background: $accent-color
-
+    width: 150px
+    height: 150px
+    border-radius: 50%
+  .authorBio
+    width: 450px
 .hidden
   display: none
