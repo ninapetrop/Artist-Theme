@@ -16,5 +16,6 @@ $(document).ready(function() {
 	$('.toggle-button').click(function(){
     $('.slideout-menu').toggleClass('slideout-open');
     $('main').toggleClass('pushLeft');
+    $('.bar').toggleClass('open');
   });
 });
