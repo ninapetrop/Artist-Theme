@@ -51,7 +51,8 @@ main
     cursor: pointer
     background: none
     border: none
-    
+    @media (min-width: 910px)
+      display: none
     .bar
       display: block
       position: absolute
@@ -78,3 +79,21 @@ main
       &.open
         top: 8px
         transform: rotate(-135deg)
+
+// Top Navbar 2/4/2016 change
+#menu.topNavbar
+  position: fixed
+  z-index: 1
+  width: auto
+  top: 0
+  right: 0
+  padding-top: 10px
+  a
+    width: 200px
+    margin-right: 50px
+    font:
+      size: 18px
+      weight: 500
+    color: white
+  @media (min-width: 10px) and (max-width: 910px)
+    display: none
