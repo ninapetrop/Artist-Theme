@@ -504,6 +504,9 @@ main .toggle-button {
   cursor: pointer;
   background: none;
   border: none; }
+  @media (min-width: 910px) {
+    main .toggle-button {
+      display: none; } }
   main .toggle-button .bar {
     display: block;
     position: absolute;
@@ -533,6 +536,23 @@ main .toggle-button {
       top: 8px;
       -webkit-transform: rotate(-135deg);
               transform: rotate(-135deg); }
+
+#menu.topNavbar {
+  position: fixed;
+  z-index: 1;
+  width: auto;
+  top: 0;
+  right: 0;
+  padding-top: 10px; }
+  #menu.topNavbar a {
+    width: 200px;
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    color: white; }
+  @media (min-width: 10px) and (max-width: 910px) {
+    #menu.topNavbar {
+      display: none; } }
 
 footer {
   background: #212121;
