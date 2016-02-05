@@ -84,16 +84,19 @@ main
 #menu.topNavbar
   position: fixed
   z-index: 1
-  width: auto
+  width: 100%
   top: 0
   right: 0
-  padding-top: 10px
-  a
-    width: 200px
-    margin-right: 50px
-    font:
-      size: 18px
-      weight: 500
-    color: white
+  padding: 10px 0
+  //background: rgba(0, 0, 0, .3)
+  nav
+    width: 450px
+    float: right
+    a
+      width: 200px
+      margin-right: 50px
+      font:
+        weight: 700
+      color: #212121
   @media (min-width: 10px) and (max-width: 910px)
     display: none

@@ -5,6 +5,66 @@ title: About
 
 <!-- I prefer to write in Jade. If you don't, feel free to just write in Vanilla HTML and remove the following liquid tag ... -->
 
-{% include about.html %}
 
 <!-- ... and write that Vanilla HTML right here. -->
+
+
+<div class='xs-12 topBar hidden'>
+  <p>{{ page.title }}</p>
+</div>
+
+<div class="xs-12 imgBack textCenter vertCenter banner" style='background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1) ), url({{ site.url }}/assets/img/city2.jpg)'></div>
+
+<div class='post-wrap flexbox-contain'>
+  <h1> {{ page.title }}</h1>
+</div>
+
+<div class='post-wrap flexbox-contain column'>
+
+  <!-- Tell people something unique about you... -->
+  <p class='big textCenter'><b class='accent'>Getting Groovy with Sass & Jade</b></p>
+
+  <p>Nina Petropoulos is a self-taught web designer and developer who's trying to get better by making themes like this one. An English major by day and a music producer by night, Nina believes in artistic expression and curiosity. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil consequatur rem omnis odit. Quo quaerat vero hic facere iste laudantium veniam modi qui ipsa, eos facilis doloribus, voluptate blanditiis non.</p>
+
+  <!-- List you associated sites and social medias... -->
+  <div class='flexbox-contain this justify-around icon-container'>
+    <img class='social-media' src='{{ site.url }}/assets/img/icons/twitter.svg'>
+    <img class='social-media' src='{{ site.url }}/assets/img/icons/behance.svg'>
+    <img class='social-media' src='{{ site.url }}/assets/img/icons/facebook.svg'>
+    <img class='social-media' src='{{ site.url }}/assets/img/icons/Github.svg'>
+    <img class='social-media' src='{{ site.url }}/assets/img/icons/Google-Plus.svg'>
+    <img class='social-media' src='{{ site.url }}/assets/img/icons/youtube.svg'>
+  </div>
+
+  <hr>
+
+  <!-- Talk about what you've recently been a part of or have worked on... -->
+  <h2 class='accent'>Skills</h2>
+  <div class='flexbox-contain justify-around icon-container skills'>
+    <img class='social-media' src='{{ site.url }}/assets/img/icons/adobe-after-effect.png'>
+    <img class='social-media' src='{{ site.url }}/assets/img/icons/adobe-dreamweaver.png'>
+    <img class='social-media' src='{{ site.url }}/assets/img/icons/adobe-illustrator.png'>
+    <img class='social-media' src='{{ site.url }}/assets/img/icons/adobe-indesign.png'>
+    <img class='social-media' src='{{ site.url }}/assets/img/icons/Google-Plus.svg'>
+    <img class='social-media' src='{{ site.url }}/assets/img/icons/angular.png'>
+    <img class='social-media django' src='{{ site.url }}/assets/img/icons/django.png'>
+  </div>
+  <div class='scorebox'>
+    <header>
+      <h3>Adobe Indesign</h3>
+    </header>
+    <b>Experience: <span class='experience answer'>3 years</span></b><br>
+    <b>Comfortability: <span class='experience answer'>Very</span></b>
+  </div>
+
+  <div class='scorebox django hidden'>
+    <header>
+      <h3>Django</h3>
+    </header>
+    <b>IT WORKS!!</b>
+  </div>
+
+
+  <button class='download button animated bounce'>Download</button>
+
+</div>

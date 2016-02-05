@@ -1,3 +1,4 @@
+@import url(0-tools/animate.css);
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -396,11 +397,17 @@ a {
 .textCenter {
   text-align: center; }
 
+.text-right {
+  text-align: right; }
+
 .caps {
   text-transform: uppercase; }
 
 .small {
   font-size: 12px; }
+
+.big {
+  font-size: 21px; }
 
 .meta {
   color: #FCB941; }
@@ -540,16 +547,18 @@ main .toggle-button {
 #menu.topNavbar {
   position: fixed;
   z-index: 1;
-  width: auto;
+  width: 100%;
   top: 0;
   right: 0;
-  padding-top: 10px; }
-  #menu.topNavbar a {
-    width: 200px;
-    margin-right: 50px;
-    font-size: 18px;
-    font-weight: 500;
-    color: white; }
+  padding: 10px 0; }
+  #menu.topNavbar nav {
+    width: 450px;
+    float: right; }
+    #menu.topNavbar nav a {
+      width: 200px;
+      margin-right: 50px;
+      font-weight: 700;
+      color: #212121; }
   @media (min-width: 10px) and (max-width: 910px) {
     #menu.topNavbar {
       display: none; } }
@@ -616,6 +625,28 @@ footer {
   .flexbox.wrap .sm-4 {
     height: 225px; }
 
+.flexbox-contain {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  @media (max-width: 910px) {
+    .flexbox-contain {
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
+  .flexbox-contain .sm-9 {
+    width: 70%;
+    border: solid 1px green; }
+  .flexbox-contain .sm-3 {
+    width: 25%;
+    border: solid 1px red; }
+
 .divider {
   width: 100%;
   height: 15px;
@@ -659,10 +690,59 @@ footer {
           flex-shrink: 4; }
 
 .sm-8 {
-  width: 800px;
-  -webkit-flex-grow: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1; }
+  width: 800px; }
+
+.flexbox-contain.column {
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.justify-around {
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
+
+.icon-container {
+  width: 450px;
+  margin: 20px auto; }
+
+.social-media {
+  width: 50px;
+  height: 50px;
+  margin: 5px; }
+
+.skills {
+  height: 150px;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .skills img {
+    transition: width .3s, height .3s; }
+    .skills img.active {
+      height: 100px;
+      width: 100px; }
+
+.scorebox {
+  width: 380px;
+  margin: 0 auto 25px auto;
+  padding: 10px;
+  background: #fafafa;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.19); }
+  .scorebox header {
+    margin: 0; }
+    .scorebox header h3 {
+      margin-top: 0; }
+
+button.download {
+  width: 250px;
+  height: 45px;
+  padding: 5px;
+  border: none;
+  background: #F1654C;
+  color: white;
+  border-radius: 2px;
+  margin: auto;
+  font-size: 18px; }
 
 .topBar {
   position: fixed;

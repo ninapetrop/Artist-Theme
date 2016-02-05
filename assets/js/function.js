@@ -19,5 +19,11 @@ $(document).ready(function() {
     $('.bar').toggleClass('open');
   });
 
-  // if menu is open, on '.main' click, close menu
+  // Skills animation: when hover on skill, show the scorebox
+  $('.skills > .social-media').hover(function(){
+    $(this).toggleClass('active');
+    if (('.skills').hasClass('django')) {
+      $('.scorebox.django').removeClass('hidden');
+    }
+  });
 });
