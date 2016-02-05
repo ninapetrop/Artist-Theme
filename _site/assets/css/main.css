@@ -535,7 +535,9 @@ main .toggle-button {
               transform: rotate(-135deg); }
 
 footer {
-  background: #FCB941; }
+  background: #212121;
+  color: #757575;
+  text-align: left; }
 
 .xs-12, .sm-6, .sm-4, .sm-8, .xs-6 {
   margin: 0;
@@ -653,6 +655,9 @@ footer {
     color: #FCB941;
     font-weight: 700;
     text-align: left; }
+    @media (max-width: 910px) {
+      .topBar p {
+        margin-left: 70px; } }
 
 .banner {
   height: 300px; }
@@ -668,6 +673,9 @@ footer {
 .authorBlock.flexbox-contain {
   width: 100%;
   padding: 20px;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
           justify-content: space-around;
@@ -680,7 +688,7 @@ footer {
     height: 150px;
     border-radius: 50%; }
   .authorBlock.flexbox-contain .authorBio {
-    width: 450px; }
+    max-width: 400px; }
 
 .hidden {
   display: none; }

@@ -18,4 +18,6 @@ $(document).ready(function() {
     $('main').toggleClass('pushLeft');
     $('.bar').toggleClass('open');
   });
+
+  // if menu is open, on '.main' click, close menu
 });

@@ -10,6 +10,8 @@
     color: $primary
     font-weight: 700
     text-align: left
+    @media (max-width: 910px)
+      margin-left: 70px
 .banner
   height: 300px
   @media (min-width: 786px)
@@ -22,6 +24,7 @@
 .authorBlock.flexbox-contain
   width: 100%
   padding: 20px
+  flex-direction: row
   justify-content: space-around
   align-items: center
   border-top: solid 3px #eaeaea
@@ -30,6 +33,6 @@
     height: 150px
     border-radius: 50%
   .authorBio
-    width: 450px
+    max-width: 400px
 .hidden
   display: none
