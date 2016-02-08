@@ -51,14 +51,12 @@ main
     cursor: pointer
     background: none
     border: none
-    @media (min-width: 910px)
-      display: none
     .bar
       display: block
       position: absolute
       height: 3px
       width: 100%
-      background: #FFC107
+      background: $accent-color
       border-radius: 9px
       opacity: 1
       left: 0
@@ -88,7 +86,6 @@ main
   top: 0
   right: 0
   padding: 10px 0
-  //background: rgba(0, 0, 0, .3)
   nav
     width: 450px
     float: right
@@ -97,6 +94,6 @@ main
       margin-right: 50px
       font:
         weight: 700
-      color: #212121
+      color: $dark
   @media (min-width: 10px) and (max-width: 910px)
     display: none

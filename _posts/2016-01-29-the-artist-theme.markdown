@@ -4,6 +4,7 @@ title:  "The Artist Theme"
 date:   2016-01-29 09:11:03
 description: Phasellus hendrerit. Pellent aliquet nibh nec urna. In nis aliquet vel, dapibus id,mattis.
 thumbnail: city2.jpg
+category: category1
 
 # Information for the author block
 author: Nina Petropoulos
