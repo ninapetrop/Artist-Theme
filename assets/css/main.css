@@ -359,11 +359,11 @@ h1 {
   font-size: 36px; }
 
 h2, .post-title {
-  font-size: 21px;
+  font-size: 24px;
   font-weight: 700; }
 
 h3 {
-  font-size: 24px; }
+  font-size: 21px; }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700; }
@@ -454,6 +454,13 @@ body {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box; }
 
+.button {
+  background: #F1654C;
+  width: 150px;
+  height: 50px;
+  padding: 5px 10px;
+  margin: auto; }
+
 #menu.slideout-menu.slideout-closed {
   display: none; }
 
@@ -511,15 +518,12 @@ main .toggle-button {
   cursor: pointer;
   background: none;
   border: none; }
-  @media (min-width: 910px) {
-    main .toggle-button {
-      display: none; } }
   main .toggle-button .bar {
     display: block;
     position: absolute;
     height: 3px;
     width: 100%;
-    background: #FFC107;
+    background: #F1654C;
     border-radius: 9px;
     opacity: 1;
     left: 0;
@@ -565,7 +569,7 @@ main .toggle-button {
 
 footer {
   background: #212121;
-  color: #757575;
+  color: #F1654C;
   text-align: left; }
 
 .xs-12, .sm-6, .sm-4, .sm-8, .xs-6 {
@@ -769,6 +773,13 @@ button.download {
   max-width: 710px;
   padding: 10px;
   margin: auto; }
+  .post-wrap ol {
+    margin-left: 10px; }
+  .post-wrap ul {
+    margin-left: 28px; }
+  .post-wrap a {
+    color: #F1654C;
+    font-weight: 500; }
 
 .authorBlock.flexbox-contain {
   width: 100%;

@@ -1,16 +1,15 @@
 @import "_vars.sass"
 
 //	Typography
-  // Global
 h1
   font-size: 36px
 
 h2, .post-title
   font:
-    size: 21px
+    size: 24px
     weight: 700
 h3
-  font-size: 24px
+  font-size: 21px
 
 h1, h2, h3, h4, h5, h6
   font-weight: 700
@@ -32,6 +31,8 @@ a
   color: black
   &:hover
     text-decoration: underline
+
+// Specific, Reoccuring Classes
 .post-title
   font:
     weight: 700
@@ -41,6 +42,7 @@ a
   color: white
   font-size: 36px
 
+// Helper Classes
 .textCenter
   text-align: center
 
@@ -51,11 +53,12 @@ a
 .small
   font-size: 12px
 .big
-  font-size: 21px 
+  font-size: 21px
 .meta
   color: $primary
 .accent
   color: $accent-color
+
 // Selection colors (easy to forget)
 ::selection
   background: $selection-color
@@ -71,8 +74,6 @@ img::-moz-selection
 
 body
   -webkit-tap-highlight-color: $selection-color
-
-
 
 // Basic Styles
 
@@ -93,3 +94,10 @@ body
   box-sizing: border-box
   -moz-box-sizing: border-box
   -webkit-box-sizing: border-box
+
+.button
+  background: $accent-color
+  width: 150px
+  height: 50px
+  padding: 5px 10px
+  margin: auto
