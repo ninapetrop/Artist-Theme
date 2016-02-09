@@ -2,6 +2,7 @@
 layout: default
 title: Home
 ---
+
 {% for post in site.posts limit:1 %}
 <div class="xs-12 imgBack textCenter vertCenter grow tall" style='background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1) ), url({{ site.url }}/assets/img/{{ post.thumbnail }})'>
   <div>
@@ -24,7 +25,7 @@ title: Home
 <div class='divider xs-12 grow'></div>
 
 <div class='flexbox'>
-{% for post in site.posts limit:2 offset:1 %}
+{% for post in site.posts limit:2 offset:3 %}
   <div class="sm-6 textPreview vertCenter grow short">
     <div>
       <a class='caps post-title' href='{{ post.url }}'>{{ post.title }}</a>
@@ -36,6 +37,8 @@ title: Home
 </div>
 
 <div class='flexbox wrap'>
+<!-- **User Input**
+  Important: once you've written enough posts, change the following `offset:1`` to  `5` -->
 {% for post in site.posts limit:3 offset:1 %}
   <div class="sm-4 imgBack vertCenter textCenter grow" style='background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1) ), url({{ site.url }}/assets/img/{{ post.thumbnail }})'>
     <div>
@@ -49,6 +52,8 @@ title: Home
 
 <div class='flexbox'>
   <div class='sm-4 textPreview shrink vertCenter'>
+    <!-- **User Input**
+      Important: once you've written enough posts, change the following `offset:2`` to  `8` -->
     {% for post in site.posts limit:2 %}
       <div>
         <a class='post-title' href='{{ post.url }}'>{{ post.title }}</a>
@@ -74,5 +79,3 @@ title: Home
     </ul>
   </div>
 </div>
-
-<button class='button'>View All</button>

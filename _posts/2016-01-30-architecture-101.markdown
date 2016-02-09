@@ -4,7 +4,7 @@ title:  "Architecture 101"
 date:   2016-01-30 09:11:03
 description: Phasellus hendrerit. Pellent aliquet nibh nec urna. In nis aliquet vel, dapibus id,mattis.
 thumbnail: building1.jpg
-category: category2
+categories: category2
 
 # Information for the author block
 author: Nina Petropoulos

@@ -4,7 +4,7 @@ title:  "Theme Styles"
 date:   2016-01-31 09:11:03
 description: Phasellus hendrerit. Pellent aliquet nibh nec urna. In nis aliquet vel, dapibus id,mattis.
 thumbnail: work1.jpg
-category: category1
+categories: category2
 
 # Information for the author block
 author: Nina Petropoulos
