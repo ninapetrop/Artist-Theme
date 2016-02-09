@@ -4,7 +4,7 @@ title:  "Need Excuses? Try This"
 date:   2016-01-24 09:11:03
 description: Phasellus hendrerit. Pellent aliquet nibh nec urna. In nis aliquet vel, dapibus id,mattis.
 thumbnail: food2.jpg
-category: category1
+categories: category1
 
 # Information for the author block
 author: Nina Petropoulos

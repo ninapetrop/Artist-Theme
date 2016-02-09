@@ -572,6 +572,27 @@ footer {
   color: #F1654C;
   text-align: left; }
 
+.post-wrap.category {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+  .post-wrap.category .post-listings.sm-8 {
+    width: 75%; }
+  .post-wrap.category .xs-12 {
+    width: 100%; }
+  .post-wrap.category .post-listings div.listing, .post-wrap.category .xs-12 div.listing {
+    padding: 15px 0 10px 0;
+    border-bottom: solid 2px #eaeaea; }
+    .post-wrap.category .post-listings div.listing .meta, .post-wrap.category .xs-12 div.listing .meta {
+      margin-top: 5px; }
+  .post-wrap.category .post-listings div:last-child, .post-wrap.category .xs-12 div:last-child {
+    border-bottom: none; }
+  .post-wrap.category .category-sidebar.sm-4 {
+    width: 25%; }
+
 .xs-12, .sm-6, .sm-4, .sm-8, .xs-6 {
   margin: 0;
   padding: 10px; }
@@ -780,6 +801,8 @@ button.download {
   .post-wrap a {
     color: #F1654C;
     font-weight: 500; }
+    .post-wrap a.post-title {
+      color: #212121; }
 
 .authorBlock.flexbox-contain {
   width: 100%;

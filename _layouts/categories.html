@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<div class="xs-12 imgBack textCenter vertCenter banner" style='background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1) ), url({{ site.url }}/assets/img/{{ page.thumbnail }}); height: 200px;'>
+  <div>
+    <a class='caps post-title' href='{{ post.url }}'>{{ page.title }}</a>
+  </div>
+</div>
+
+<div class='post-wrap category'>
+  <div class='post-listings xs-12'>
+
+    {{ content }}
+
+  </div>
+</div>
