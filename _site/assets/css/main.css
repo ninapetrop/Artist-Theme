@@ -365,6 +365,9 @@ h2, .post-title {
 h3 {
   font-size: 21px; }
 
+h4 {
+  font-size: 18px; }
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700; }
 
@@ -511,7 +514,6 @@ main.pushLeft {
 main .toggle-button {
   z-index: 1;
   position: fixed;
-  margin-top: 15px;
   margin-left: 15px;
   width: 50px;
   height: 50px;
@@ -519,10 +521,8 @@ main .toggle-button {
           transform: rotate(0deg);
   transition: .5s ease-in-out;
   cursor: pointer;
-  background: rgba(225, 225, 225, 0.5);
-  padding: 10px;
-  border: none;
-  border-radius: 25px; }
+  background: none;
+  border: none; }
   main .toggle-button .bar {
     display: block;
     position: absolute;
@@ -698,13 +698,14 @@ footer {
   color: white; }
   .imgBack h1 {
     margin-bottom: 0; }
-  .imgBack:hover {
-    -webkit-filter: saturate(70%);
-            filter: saturate(70%);
-    cursor: pointer; }
   .imgBack .meta {
     color: white;
     margin-top: 0; }
+
+.imgBack.link:hover {
+  -webkit-filter: saturate(70%);
+          filter: saturate(70%);
+  cursor: pointer; }
 
 .textPreview {
   padding: 0 50px;
@@ -806,8 +807,16 @@ button.download {
 
 .post-wrap {
   max-width: 710px;
-  padding: 10px;
+  padding: 10px 10px 50px 10px;
   margin: auto; }
+  .post-wrap h1 {
+    margin-bottom: 0; }
+  .post-wrap .meta {
+    margin-bottom: 30px;
+    margin-top: 0; }
+  .post-wrap hr {
+    margin: 40px auto;
+    width: 70%; }
   .post-wrap ol {
     margin-left: 10px; }
   .post-wrap ul {

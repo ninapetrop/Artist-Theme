@@ -1,0 +1,41 @@
+---
+layout: post
+title:  "Basic Use: A Guide"
+date:   2016-01-30 09:11:03
+description: Phasellus hendrerit. Pellent aliquet nibh nec urna. In nis aliquet vel, dapibus id,mattis.
+thumbnail: building1.jpg
+categories: category2
+
+# Information for the author block
+author: Nina Petropoulos
+---
+
+If this is your first time using Jekyll, don't be scared! Installing and setting up this particular theme is very, very simple. I'll walk you through it.
+
+## Installation
+For now, installation of this theme isn't available through the command line or package managers. Instead, use the Git Repo to grab what you need through a .zip file.
+
+1. Fork and Star the [repo][Artist Theme Repo]
+2. Download the .zip and save it to your directory
+3. Install Jekyll
+4. (Optional) Install Gulp - you certainly don't need it
+
+#### Installing Jekyll
+Open the terminal and enter the following command: `gem install jekyll`. Mac users may need to use `sudo`.
+
+For a full Jekyll installation guide, reference the official [Jekyll Docs][Jekyll Docs].
+
+- - -
+
+## Using Jekyll: Servers and Posts
+
+#### Launching a Local Jekyll Server
+
+Using the terminal navigate to your directory then enter the command: `jekyll s` to start a local server. In your browser enter the local address that Jekyll gives you.
+
+#### Making Posts !!
+
+To make a new post, create a new `.md` file following this file structure `2020-12-31-post-title.md` within the `_posts` directory. Pay close attention to the head matter at the top of each post. If it's incorrect your Jekyll server will throw errors.
+
+[Jekyll Docs]: http://jekyllrb.com/docs/installation/
+[Artist Theme Repo]: https://github.com/ninapetrop/Artist-Theme
