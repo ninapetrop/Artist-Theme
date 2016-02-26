@@ -409,6 +409,9 @@ a {
 .big {
   font-size: 21px; }
 
+.thin {
+  font-weight: 300; }
+
 .meta {
   color: #FCB941; }
 
@@ -508,22 +511,24 @@ main.pushLeft {
 main .toggle-button {
   z-index: 1;
   position: fixed;
-  margin-top: 10px;
+  margin-top: 15px;
   margin-left: 15px;
-  width: 40px;
-  height: 20px;
+  width: 50px;
+  height: 50px;
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
   transition: .5s ease-in-out;
   cursor: pointer;
-  background: none;
-  border: none; }
+  background: rgba(225, 225, 225, 0.5);
+  padding: 10px;
+  border: none;
+  border-radius: 25px; }
   main .toggle-button .bar {
     display: block;
     position: absolute;
     height: 3px;
     width: 100%;
-    background: #F1654C;
+    background: #FCB941;
     border-radius: 9px;
     opacity: 1;
     left: 0;
@@ -531,20 +536,26 @@ main .toggle-button {
             transform: rotate(0deg);
     transition: .30s ease-in-out; }
   main .toggle-button .bar:nth-child(1) {
-    top: 0px; }
+    top: 12px;
+    width: 70%;
+    margin: 0 15%; }
     main .toggle-button .bar:nth-child(1).open {
-      top: 8px;
+      top: 22px;
       -webkit-transform: rotate(135deg);
               transform: rotate(135deg); }
   main .toggle-button .bar:nth-child(2) {
-    top: 10px; }
+    top: 22px;
+    width: 90%;
+    margin: 0 5%; }
     main .toggle-button .bar:nth-child(2).open {
       opacity: 0;
       left: -60px; }
   main .toggle-button .bar:nth-child(3) {
-    top: 20px; }
+    top: 32px;
+    width: 70%;
+    margin: 0 15%; }
     main .toggle-button .bar:nth-child(3).open {
-      top: 8px;
+      top: 22px;
       -webkit-transform: rotate(-135deg);
               transform: rotate(-135deg); }
 
@@ -569,8 +580,12 @@ main .toggle-button {
 
 footer {
   background: #212121;
-  color: #F1654C;
-  text-align: left; }
+  color: white; }
+  footer div {
+    padding: 40px 0 40px 40px;
+    max-width: 300px; }
+    footer div a {
+      color: #FCB941; }
 
 .post-wrap.category {
   display: -webkit-flex;
@@ -616,8 +631,7 @@ footer {
           flex-grow: 1; }
 
 .xs-12 {
-  width: 100%;
-  text-align: center; }
+  width: 100%; }
 
 .flexbox {
   display: -webkit-flex;

@@ -39,43 +39,52 @@ main
     will-change: transform
     margin-left: 260px
     overflow: hidden
+
   .toggle-button
     z-index: 1
     position: fixed
-    margin-top: 10px
+    margin-top: 15px
     margin-left: 15px
-    width: 40px
-    height: 20px
+    width: 50px
+    height: 50px
     transform: rotate(0deg)
     transition: .5s ease-in-out
     cursor: pointer
-    background: none
+    background: rgba(225, 225, 225, .5)
+    padding: 10px
     border: none
+    border-radius: 25px
     .bar
       display: block
       position: absolute
       height: 3px
       width: 100%
-      background: $accent-color
+      background: $primary
       border-radius: 9px
       opacity: 1
       left: 0
       transform: rotate(0deg)
       transition: .30s ease-in-out
     .bar:nth-child(1)
-      top: 0px
+      top: 12px
+      width: 70%
+      margin: 0 15%
       &.open
-        top: 8px
+        top: 22px
         transform: rotate(135deg)
     .bar:nth-child(2)
-      top: 10px
+      top: 22px
+      width: 90%
+      margin: 0 5%
       &.open
         opacity: 0
         left: -60px
     .bar:nth-child(3)
-      top: 20px
+      top: 32px
+      width: 70%
+      margin: 0 15%
       &.open
-        top: 8px
+        top: 22px
         transform: rotate(-135deg)
 
 // Top Navbar 2/4/2016 change

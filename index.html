@@ -51,31 +51,13 @@ title: Home
 <div class='divider xs-12 grow'></div>
 
 <div class='flexbox'>
-  <div class='sm-4 textPreview shrink vertCenter'>
-    <!-- **User Input**
-      Important: once you've written enough posts, change the following `offset:2`` to  `8` -->
-    {% for post in site.posts limit:2 %}
-      <div>
-        <a class='post-title' href='{{ post.url }}'>{{ post.title }}</a>
-        <p>{{ post.excerpt }}</p>
-        <p class='meta'>{{ post.date | date_to_long_string }} / by {{ post.author }}</p>
-      </div>
-    {% endfor %}
+{% for post in site.posts limit:2 offset:3 %}
+  <div class="sm-6 textPreview vertCenter grow short">
+    <div>
+      <a class='caps post-title' href='{{ post.url }}'>{{ post.title }}</a>
+      <p>{{ post.excerpt }}</p>
+      <p class='meta'>{{ post.date | date_to_long_string }} / by {{ post.author }}</p>
+    </div>
   </div>
-  <div class='sm-8 grow flexbox wrap'>
-    <ul class='xs-6'>
-      {% for post in site.posts limit:4 %}
-      <li class='post-title'><a class='post-title' href='{{ post.url }}'>{{ post.title }}</a></li>
-      <li class='meta'>{{ post.date | date_to_long_string }} / by {{ post.author }}</li>
-      <hr>
-      {% endfor %}
-    </ul>
-    <ul class='xs-6 short'>
-      {% for post in site.posts limit:4 %}
-      <li class='post-title'><a class='post-title' href='{{ post.url }}'>{{ post.title }}</a></li>
-      <li class='meta'>{{ post.date | date_to_long_string }} / by {{ post.author }}</li>
-      <hr>
-      {% endfor %}
-    </ul>
-  </div>
+{% endfor %}
 </div>
