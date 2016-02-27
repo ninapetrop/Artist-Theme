@@ -39,7 +39,7 @@ To make a new post, create a new `.md` file following this file structure `2020-
 
 #### Customizing
 
-Change your primary and accent colors inside `assets/css/1-base/_vars.sass` by changing the 
+Change your primary and accent colors inside `assets/css/1-base/_vars.sass` by changing the `$primary` and `$accent-color` variables for site-wide changes.
 
 [Jekyll Docs]: http://jekyllrb.com/docs/installation/
 [Artist Theme Repo]: https://github.com/ninapetrop/Artist-Theme
