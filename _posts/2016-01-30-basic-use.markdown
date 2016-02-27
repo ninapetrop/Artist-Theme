@@ -33,9 +33,13 @@ For a full Jekyll installation guide, reference the official [Jekyll Docs][Jekyl
 
 Using the terminal navigate to your directory then enter the command: `jekyll serve` to start a local server. In your browser enter the local address that Jekyll gives you.
 
-#### Making Posts !!
+#### Making Posts
 
 To make a new post, create a new `.md` file following this file structure `2020-12-31-post-title.md` within the `_posts` directory. Pay close attention to the head matter at the top of each post. If it's incorrect your Jekyll server will throw errors.
+
+#### Customizing
+
+Change your primary and accent colors inside `assets/css/1-base/_vars.sass` by changing the 
 
 [Jekyll Docs]: http://jekyllrb.com/docs/installation/
 [Artist Theme Repo]: https://github.com/ninapetrop/Artist-Theme
