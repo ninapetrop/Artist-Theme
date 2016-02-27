@@ -18,12 +18,4 @@ $(document).ready(function() {
     $('main').toggleClass('pushLeft');
     $('.bar').toggleClass('open');
   });
-
-  // Skills animation: when hover on skill, show the scorebox
-  $('.skills > .social-media').hover(function(){
-    $(this).toggleClass('active');
-    if (('.skills').hasClass('django')) {
-      $('.scorebox.django').removeClass('hidden');
-    }
-  });
 });

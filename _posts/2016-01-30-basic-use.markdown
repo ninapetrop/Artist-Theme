@@ -31,7 +31,7 @@ For a full Jekyll installation guide, reference the official [Jekyll Docs][Jekyl
 
 #### Launching a Local Jekyll Server
 
-Using the terminal navigate to your directory then enter the command: `jekyll s` to start a local server. In your browser enter the local address that Jekyll gives you.
+Using the terminal navigate to your directory then enter the command: `jekyll serve` to start a local server. In your browser enter the local address that Jekyll gives you.
 
 #### Making Posts !!
 

@@ -18,16 +18,19 @@
     flex-direction: column
     justify-content: space-between
     nav
+      h4
+        margin-bottom: 5px
       a
         display: block
-        padding: 10px 0
-        font-size: 18px
-        color: white
+        padding: 5px 0
+        font-size: 16px
+        color: $primary
+        font-weight: 500
 
     .details
       border-top: solid 2px #757575
       padding-top: 10px
-      b
+      b, a
         color: $primary
       p
         margin-top: 0
@@ -38,7 +41,7 @@ main
     z-index: 1
     will-change: transform
     margin-left: 260px
-    overflow: hidden      
+    overflow: hidden
   .toggle-button
     z-index: 1
     position: fixed
