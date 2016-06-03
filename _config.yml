@@ -7,12 +7,12 @@ exclude: ["node_modules", "gulpfile.js", "package.json"]
 title: Artist Theme
 email: your-email@domain.com
 description: A small and simple site I made to test out Jekyll. Watch out! I'm going to make a material design theme next!
-baseurl: "/Artist-Theme" # the subpath of your site, e.g. /blog
 
-# Where can people find your site?
+#GitHub Project Pages Settings
 url: "http://ninapetrop.github.io/Artist-Theme"
-# When developing, set this ^ equal to whatever localhost you're using
+baseurl: "/Artist-Theme"
 url-pretty: "ninapetrop.github.io/Artist-Theme"
+
 # Socail Media links
 # Use these to link users to your organization's social media sites
 twitter:
