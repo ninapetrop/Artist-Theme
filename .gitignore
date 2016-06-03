@@ -38,3 +38,9 @@ _site/
 ### Sass ###
 .sass-cache/
 *.css.map
+
+### Prep for GH-Pages ###
+node_modules
+_jadefiles
+gulpfile.js
+package.json
