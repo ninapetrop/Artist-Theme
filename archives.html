@@ -6,7 +6,7 @@ thumbnail: city2.jpg
 
 {% for post in site.posts %}
   <div class='listing'>
-    <a class='post-title' href='{{ post.baseurl }}'>{{ post.title }}</a>
+    <a class='post-title' href='{{ post.url | prepend: site.baseurl }}'>{{ post.title }}</a>
     <p class='meta'>{{ post.date | date_to_long_string }} / by {{ post.author }}</p>
   </div>
 {% endfor %}
