@@ -1,16 +1,17 @@
 ---
 layout: default
 title: Home
+published: true
 ---
 
-{% for post in site.posts limit:1 %}
+<!-- {% for post in site.posts limit:1 %}
 <div class="xs-12 imgBack link textCenter vertCenter grow tall" style='background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1) ), url({{ site.url }}/assets/img/{{ post.thumbnail }})'>
   <div>
     <a class='caps post-title' href='{{ post.url }}'>{{ post.title }}</a>
     <p class='meta'>{{ post.date | date_to_long_string }} / by {{ post.author }}</p>
   </div>
 </div>
-{% endfor %}
+{% endfor %} -->
 
 <div class='flexbox wrap'>
 {% for post in site.posts limit:2 offset:1 %}
