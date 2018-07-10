@@ -4,9 +4,9 @@ highlighter: pygments # or rouge or null
 exclude: ["node_modules", "gulpfile.js", "package.json"]
 
 # Jekyll Defaults
-title: Artist Theme
-email: your-email@domain.com
-description: A small and simple site I made to test out Jekyll. Watch out! I'm going to make a material design theme next!
+title: Perte de temps
+email: kde12327@gmail.com
+description: Doing something will be maybe perte de temps. All of things in my blog is perte de temps and exist to avoid time waste.
 baseurl: "http://localhost:3000" # the subpath of your site, e.g. /blog
 
 # Where can people find your site?
@@ -19,5 +19,5 @@ twitter:
 facebook:
 google:
 
-author: Nina Petropoulos
-authorBio: A English major by day, a musician by night, and a web developer because of the summer I was bored - my name's Nina and I hope you enjoy my Hello Portland theme, the second theme I've made with Jekyll.
+author: Doeun Kim
+authorBio: Univ student. Major : Computer Science.
