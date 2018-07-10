@@ -10,7 +10,7 @@ description: Doing something will be maybe perte de temps. All of things in my b
 baseurl: "http://localhost:3000" # the subpath of your site, e.g. /blog
 
 # Where can people find your site?
-url: "http://localhost:3000"
+url: ""
 # When developing, set this ^ equal to whatever localhost you're using
 
 # Socail Media links
